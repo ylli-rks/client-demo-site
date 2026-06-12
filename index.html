@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Concept Demo</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f8f9fa; color: #333; padding-top: 40px; }
+        
+        /* Demo Watermark Banner */
+        .demo-banner {
+            background: linear-gradient(90deg, #ff4e50, #f9d423);
+            color: black;
+            text-align: center;
+            padding: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Navbar */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 10%; background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .logo { font-size: 24px; font-weight: bold; color: #1a73e8; }
+        .nav-links a { margin-left: 20px; text-decoration: none; color: #5f6368; font-weight: 500; }
+
+        /* Hero Section */
+        .hero { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 100px 20px; background: white; }
+        .hero h1 { font-size: 48px; margin-bottom: 20px; color: #202124; }
+        .hero p { font-size: 18px; color: #5f6368; max-width: 600px; margin-bottom: 30px; line-height: 1.6; }
+        .btn { background-color: #1a73e8; color: white; padding: 12px 30px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; text-decoration: none; font-weight: bold; transition: 0.2s; }
+        .btn:hover { background-color: #1557b0; }
+
+        /* Features Section */
+        .features { display: flex; justify-content: space-around; padding: 80px 10%; background: #f8f9fa; }
+        .card { background: white; padding: 30px; border-radius: 8px; width: 30%; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; }
+        .card h3 { margin-bottom: 15px; color: #202124; }
+        .card p { color: #5f6368; font-size: 14px; line-height: 1.5; }
+    </style>
+</head>
+<body>
+
+    <!-- Watermark to protect your work -->
+    <div class="demo-banner">
+        ⚠️ PREVIEW CONCEPT DEMO — Property of Web Design Co. (Links/Buttons are for demonstration only)
+    </div>
+
+    <nav>
+        <div class="logo">BrandName</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Your Client's Future Website</h1>
+        <p>This is a live, fully responsive preview of how your website will look. Modern design, lightning-fast speeds, and optimized to convert your visitors into paying customers.</p>
+        <a href="#" class="btn" onclick="alert('In the final version, this button will guide users to your checkout or contact form!')">Get Started Today</a>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <h3>Feature One</h3>
+            <p>Describe a key benefit of the client's business right here to show them how you structure content.</p>
+        </div>
+        <div class="card">
+            <h3>Feature Two</h3>
+            <p>Everything is fully customizable to match your specific brand colors, fonts, and images.</p>
+        </div>
+        <div class="card">
+            <h3>Feature Three</h3>
+            <p>Mobile friendly design ensures this website looks amazing on phones, tablets, and desktops.</p>
+        </div>
+    </section>
+
+</body>
+</html>
